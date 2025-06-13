@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import SignUp from "./LandingPage/SignUp"
-import About from "./LandingPage/About"
-import Product from "./LandingPage/Product"
-import Pricing from "./LandingPage/Pricing"
-import Support from "./LandingPage/Support"
+import SignIn from "./SignIn/SignIn";
+import AboutPage from "./About/AboutPage";
+import ProductPage from "./Products/ProductPage";
+import PricingPage from "./Pricing/PricingPage";
+import SupportPage from "./Support/SupportPage";
 export default function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
