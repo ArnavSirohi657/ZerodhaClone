@@ -4,11 +4,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './HOME/HomePage';
 import SignIn from './SignIn/SignIn.jsx';
 import About from './about/AboutPage';  // Changed from LandingPage/About to about/AboutPage
-import { ProductPage } from './landing_page/products/ProductsPage.js';  // Assuming this is where Product.js is
+import { ProductPage } from './Products/ProductPage.jsx';  // Assuming this is where Product.js is
 import PricingPage from './Pricing/PricingPage.jsx';  // Assuming this is where Support.js is
 import NavBar from './NavBar.jsx';                  // Changed from NavBar to Navbar.js
 import Footer from './Footer';
-import { SupportPage } from './landing_page/support/SupportPage.js';
+import SupportPage from './Support/SupportPage.jsx'; 
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
