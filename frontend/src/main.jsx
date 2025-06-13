@@ -1,27 +1,27 @@
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { createRoot } from 'react-dom/client'
-import HomePage from './HOME/HomePage'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import SignUp from "./LandingPage/SignUp"
-import About from "./LandingPage/About"
-import Product from "./LandingPage/Product"
-import Pricing from "./LandingPage/Pricing"
-import Support from "./LandingPage/Support"
-import NavBar from './NavBar'
-import Footer from './Footer'
+// Importing components from their respective folders
+import HomePage from './HOME/HomePage';
+import SignUp from './SignUp/SignUp';
+import About from './about/AboutPage';  // Changed from LandingPage/About to about/AboutPage
+import { ProductPage } from './landing_page/products/ProductsPage.js';  // Assuming this is where Product.js is
+import PricingPage from './Pricing/PricingPage.jsx';  // Assuming this is where Support.js is
+import NavBar from './NavBar.jsx';                  // Changed from NavBar to Navbar.js
+import Footer from './Footer';
+import { SupportPage } from './landing_page/support/SupportPage.js';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-  <NavBar/>
-  
-  <Routes>
-    <Route path='/' element={<HomePage/>}/>
-    <Route path='/signup' element={<SignUp/>}/>
-    <Route path='/about' element={<About/>}/>
-    <Route path='/product' element={<Product/>}/>
-    <Route path='/pricing' element={<Pricing/>}/>
-    <Route path='/support' element={<Support/>}/>
-  </Routes>
-  <Footer/>
+    <NavBar />
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/product" element={<ProductPage />} />
+      <Route path="/pricing" element={<PricingPage />} />
+      <Route path="/support" element={<SupportPage />} />
+    </Routes>
+    <Footer />
   </BrowserRouter>
-)
+);

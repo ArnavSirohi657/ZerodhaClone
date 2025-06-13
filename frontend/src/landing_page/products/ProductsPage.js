@@ -8,7 +8,7 @@ import Universe from "./Universe";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
-function PricingPage() {
+export function ProductPage() {
   return (
     <>
       <Hero />
@@ -60,4 +60,4 @@ function PricingPage() {
   );
 }
 
-export default PricingPage;
+
