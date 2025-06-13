@@ -4,7 +4,7 @@ const handleClick=()=>{
   event.preventDefault()
   window.location.href="https://zerodha-clone-abnm0boe3-arnavsirohis-projects.vercel.app/";
 }
-const SignIn = () => {
+export default function SignIn  ()  {
   
   return (
     <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
@@ -43,4 +43,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+
