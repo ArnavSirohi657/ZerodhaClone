@@ -5,7 +5,7 @@ import Hero from "./Hero"
 import NavBar from "../NavBar"
 import Pricing from "./Pricing"
 import Stats from "./Stats"
-import Education from "./education"
+import Education from "./Education"
 export default function HomePage(){
     return(
         <>
