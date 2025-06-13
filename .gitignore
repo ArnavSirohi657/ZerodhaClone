@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+# cache
+.cache/
+**/.cache/
+
+# dotenv
+.env
+
+# build
+dist/
+build/
