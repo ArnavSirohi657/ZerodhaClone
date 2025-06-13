@@ -4,6 +4,7 @@ node_modules/
 # cache
 .cache/
 **/.cache/
+dashboard/node_modules/.cache/
 
 # dotenv
 .env
