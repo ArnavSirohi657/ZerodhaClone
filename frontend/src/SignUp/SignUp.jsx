@@ -2,7 +2,7 @@ import React from "react";
 
 const handleClick=()=>{
   event.preventDefault()
-  window.location.href="http://localhost:3000";
+  window.location.href="https://zerodha-clone-abnm0boe3-arnavsirohis-projects.vercel.app/";
 }
 const SignIn = () => {
   
