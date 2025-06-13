@@ -24,7 +24,8 @@ const PORT = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
 
 const app = express();
-app.use(cors({ origin: "http://localhost:3000", methods: ["GET", "POST"] }));
+app.use(cors({ origin: "https://zerodhaclone-10ae.onrender.com", methods: ["GET", "POST"] }));
+
 app.use(bodyParser.json());
 
 // Frontend build serve
